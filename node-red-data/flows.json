@@ -1,0 +1,585 @@
+[
+    {
+        "id": "a068af464263e5c3",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e636d41b618d4c1f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.80.9",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5f6722ae0ae88dae",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mosquitto",
+        "port": "1883",
+        "tls": "af9b75569105af02",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "af9b75569105af02",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "client.crt",
+        "keyname": "client.key",
+        "caname": "ca.crt",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "33c598d1cd89105e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "3f49de320682e22e",
+        "type": "ui_tab",
+        "name": "Sistemas de bombas de infusión",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b999497ca9162823",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "3faaf39aacc8d944",
+        "order": 4,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "d24e2cf0edabfcd1",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "3faaf39aacc8d944",
+        "order": 6,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "154376dad746fa61",
+        "type": "ui_group",
+        "name": "Bomba de infusión 1",
+        "tab": "3f49de320682e22e",
+        "order": 1,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "24512c61e2c462e5",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "3f49de320682e22e",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "fa1e8726c60c7a8f",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c16910c07615a2aa",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d94ed35b222dad0f",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5661b59ad6d52551",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d948321b22ae6f29",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "29cfe82e81af23c9",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "aa0816cc75f9ae4f",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 9,
+        "width": 27,
+        "height": 1
+    },
+    {
+        "id": "e0f8c2843f34f1ea",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "22310ec3e2877ccb",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 13,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5a496d94a073e470",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 14,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5d8045079ac15b13",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 15,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3f34a5e9150b1290",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 16,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "13bc8df32e50faa9",
+        "type": "ui_spacer",
+        "z": "a068af464263e5c3",
+        "name": "spacer",
+        "group": "154376dad746fa61",
+        "order": 17,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d6e1f5379b7d1a05",
+        "type": "mqtt in",
+        "z": "a068af464263e5c3",
+        "name": "",
+        "topic": "prototipo/bomba1a",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f6722ae0ae88dae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "093584be6cd03671",
+                "daf0c3b88a308e3d",
+                "13d4d4a0264a1f6f"
+            ]
+        ]
+    },
+    {
+        "id": "13d4d4a0264a1f6f",
+        "type": "debug",
+        "z": "a068af464263e5c3",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "093584be6cd03671",
+        "type": "ui_gauge",
+        "z": "a068af464263e5c3",
+        "name": "",
+        "group": "154376dad746fa61",
+        "order": 3,
+        "width": 8,
+        "height": 6,
+        "gtype": "gage",
+        "title": "bomba1a",
+        "label": "ml/h",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 420,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5227f20c83b6fddd",
+        "type": "ui_gauge",
+        "z": "a068af464263e5c3",
+        "name": "",
+        "group": "154376dad746fa61",
+        "order": 12,
+        "width": 8,
+        "height": 6,
+        "gtype": "gage",
+        "title": "Bomba1b",
+        "label": "ml/h",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 420,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "daf0c3b88a308e3d",
+        "type": "ui_chart",
+        "z": "a068af464263e5c3",
+        "name": "",
+        "group": "154376dad746fa61",
+        "order": 1,
+        "width": 17,
+        "height": 6,
+        "label": "bomba1a",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 420,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a76b1cbfbfad6323",
+        "type": "ui_chart",
+        "z": "a068af464263e5c3",
+        "name": "",
+        "group": "154376dad746fa61",
+        "order": 10,
+        "width": 17,
+        "height": 6,
+        "label": "Bomba1b",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 420,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62a651ff37157ee9",
+        "type": "mqtt in",
+        "z": "a068af464263e5c3",
+        "name": "",
+        "topic": "prototipo/bomba1b",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5f6722ae0ae88dae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 460,
+        "wires": [
+            [
+                "5227f20c83b6fddd",
+                "a76b1cbfbfad6323",
+                "5ddb69cf0dbcb896"
+            ]
+        ]
+    },
+    {
+        "id": "5ddb69cf0dbcb896",
+        "type": "debug",
+        "z": "a068af464263e5c3",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 600,
+        "wires": []
+    }
+]
